@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Flickr</title>
+</head>
+<body>
+    <h1>Start your meme production by searching Flickr!</h1>
+
+    <form action='result/' method='POST'>{% csrf_token %}
+        <input type='text' name='keyword' placeholder="Search Flickr" required/>
+        <input type='submit' value='Search' />
+    </form>
+</body>
+</html>

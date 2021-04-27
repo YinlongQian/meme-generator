@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    {% if keyword is not None %}
+    <h1>Here are search results for {{ keyword }}! </h1>
+
+    {% else %}
+    <h1>Please go back to Search page and enter search keyword.</h1>
+    {% endif %}
+    
+</body>
+</html>
