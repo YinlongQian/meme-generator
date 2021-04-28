@@ -1,0 +1,9 @@
+README - Meme generator
+1. In terminal/command line, go to Django root directory of the project (contains file manage.py).
+2. Run: python manage.py runserver
+3. Open a browser, go to: http://localhost:8000/home/
+4. Enter: search keyword
+5. Click an image as the background of meme
+6. Enter: text
+7. Meme completed!
+8. Meme is stored in static directory.
