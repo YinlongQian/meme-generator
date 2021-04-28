@@ -1,10 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Meme completed!</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/image.css' %}">
 </head>
 <body>
     <h1>Meme completed!</h1>
-    <img src={{ image_url }}>
+    <img src="{% static meme_dir %}">
 </body>
 </html>

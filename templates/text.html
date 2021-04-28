@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Flickr</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/image.css' %}">
+</head>
+<body>
+    <h1>Here is your meme background image!</h1>
+    <img src={{ image_url }}>
+    <h1>Enter your text here:</h1>
+
+    <form action='complete/' method='POST'>{% csrf_token %}
+        <input type='text' name='memetext' placeholder="Meme text" required/>
+        <input type='submit' value='Enter' />
+    </form>
+</body>
+</html>
