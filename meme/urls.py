@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from meme_generator.views import home_view, result_view
+from meme_generator.views import home_view, result_view, complete_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('home/', home_view, name='home'),
     path('home/result/', result_view, name="result"),
+    path('home/result/complete/<path:image_url>/', complete_view, name="complete")
 ]

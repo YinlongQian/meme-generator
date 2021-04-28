@@ -1,12 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/image.css' %}">
 </head>
 <body>
     {% if keyword is not None %}
     <h1>Here are search results for {{ keyword }}! </h1>
-
+    {% for image_url in urls %}
+    <div>
+        <a href="complete/{{ image_url }}/">
+            <img src={{ image_url }}>
+        </a>
+    </div>
+    {% endfor %}
     {% else %}
     <h1>Please go back to Search page and enter search keyword.</h1>
     {% endif %}
